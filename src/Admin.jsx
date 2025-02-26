@@ -45,8 +45,8 @@ export default function Admin() {
         <h2 className="text-xl font-bold mb-4">Menu</h2>
         <ul className="space-y-2">
           <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/bookings")}>Bookings</button></li>
-          <li><button className="w-full text-left hover:text-blue-600 transition">Units</button></li>
-          <li><button className="w-full text-left hover:text-blue-600 transition">Reviews</button></li>
+          <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/cardAdmin")}>Units</button></li>
+
         </ul>
       </div>
 
@@ -61,16 +61,14 @@ export default function Admin() {
               <h2 className="text-xl font-bold mb-3">Menu</h2>
               <ul className="space-y-2">
                 <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/bookings")}>Bookings</button></li>
-                <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/vendor")}>Units</button></li>
-                <li><button className="w-full text-left hover:text-blue-600 transition">Reviews</button></li>
+                <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/cardAdmin")}>Units</button></li>
+
               </ul>
             </div>
           )}
         </div>
 
-        <div className="hidden md:block mb-4">
-          <button onClick={() => setShowPopup(true)} className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Add Unit</button>
-        </div>
+
 
         <div className="w-full flex justify-center">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mx-auto place-items-center">

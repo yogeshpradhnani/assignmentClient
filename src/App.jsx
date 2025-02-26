@@ -11,6 +11,7 @@ import AuthForm from "./AuthForm"; // If you have an AuthForm route
 import Bookings from "./Bookings";
 import CustBookings from "./CustBooking";
 import Admin from "./Admin";
+import CardAdmin from "./CardAdmin";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         {/* Auth route (example, if you want a separate page) */}
         <Route path="/auth" element={<AuthForm onClose={() => {}} />} />
         <Route path="/auth" element={<AuthForm onClose={() => {}} />} />
+        <Route path="/cardAdmin" element={<CardAdmin onClose={() => {}} />} />
 
         {/* 404 - Not Found (optional) */}
         <Route path="*" element={<Home />} />

@@ -48,11 +48,7 @@ export default function Vendor() {
               Units
             </button>
           </li>
-          <li>
-            <button className="w-full text-left hover:text-blue-600 transition">
-              Reviews
-            </button>
-          </li>
+
         </ul>
       </div>
 
@@ -82,11 +78,7 @@ export default function Vendor() {
                     Units
                   </button>
                 </li>
-                <li>
-                  <button className="w-full text-left hover:text-blue-600 transition">
-                    Reviews
-                  </button>
-                </li>
+    
               </ul>
             </div>
           )}
