@@ -49,20 +49,7 @@ export default function CardAdmin({ hotel, setHotels }) {
     }
   };
 
-  const handleListNow = async () => {
-    try {
-      const accessToken = localStorage.getItem("accessToken");
-      const response = await fetch(`${config.api}/list/${hotel._id}`, {
-        headers: { Authorization: `Bearer ${accessToken}` },
-      });
-      const data = await response.json();
-      setHotelDetails(data.data);
-      setIsPopupOpen(true);
-    } catch (error) {
-      console.error("Error fetching hotel details:", error);
-      showNotification("Failed to fetch details!", "error");
-    }
-  };
+
 
   const handleToggleActive = async () => {
     const accessToken = localStorage.getItem("accessToken");
@@ -114,7 +101,7 @@ export default function CardAdmin({ hotel, setHotels }) {
           </p>
 
           <div className="CardVendor-actions w-full flex flex-col items-center m-1 p-2 gap-2">
-            <button className="btn btn-primary w-full" onClick={handleListNow}>List Now</button>
+        
             <button
               className={`btn w-full ${hotel.isActive ? "btn-warning" : "btn-success"}`}
               onClick={handleToggleActive}
