@@ -13,14 +13,7 @@ export default function Vendor() {
 
   // Fetch hotels on mount
   useEffect(() => {
-    const accessToken = localStorage.getItem("accessToken");
-    const role = localStorage.getItem("role");
 
-    if (!accessToken || role !== "vendor") {
-      alert("Unauthorized Access!");
-      navigate("/");
-      return;
-    }
 
     fetch(`${config.api}/list`)
       .then((response) => response.json())
