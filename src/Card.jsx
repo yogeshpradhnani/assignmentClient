@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import HotelDetailPopup from "./HotelDetailPopup";
 import hotelimg from "./assets/hotelimg.png";
+import config from "../config";
 
 export default function Card({ hotel }) {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -22,7 +23,7 @@ export default function Card({ hotel }) {
         {/* Hotel Image */}
         <figure className="h-40 w-full">
           <img
-            src={hotel.images?.[0] || hotelimg} // Default image fallback
+            src={`${config.img}/${hotel.images?.[0]}` || hotelimg} // Default image fallback
             alt={hotel.name}
             className="w-full h-full object-cover"
           />
