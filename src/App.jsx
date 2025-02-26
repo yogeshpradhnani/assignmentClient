@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import Vendor from "./Vendor";
 import AuthForm from "./AuthForm"; // If you have an AuthForm route
-import { Booking } from "../../../backend/src/models/booking.model";
+
 import Bookings from "./Bookings";
 import CustBookings from "./CustBooking";
 import Admin from "./Admin";
