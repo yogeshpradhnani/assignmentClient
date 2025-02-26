@@ -52,7 +52,7 @@ export default function Admin() {
 
       <div className="flex-1 flex flex-col items-center mt-20 mx-auto max-w-[900px] px-4">
         <div className="md:hidden flex flex-col items-center mb-4">
-          <button onClick={() => setShowPopup(true)} className="mb-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">Add Unit</button>
+    
           <button onClick={() => setShowMenu(!showMenu)} className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
             {showMenu ? "Close Menu" : "Open Menu"}
           </button>
