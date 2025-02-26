@@ -34,7 +34,7 @@ function App() {
         {/* Auth route (example, if you want a separate page) */}
         <Route path="/auth" element={<AuthForm onClose={() => {}} />} />
         <Route path="/auth" element={<AuthForm onClose={() => {}} />} />
-        <Route path="/cardAdmin" element={<CardAdmin onClose={() => {}} />} />
+    
 
         {/* 404 - Not Found (optional) */}
         <Route path="*" element={<Home />} />
