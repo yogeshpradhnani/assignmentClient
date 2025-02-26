@@ -30,6 +30,8 @@ function App() {
         <Route path="/bookings" element={<Bookings />} />
         <Route path="/customerBookings" element={<CustBookings />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/admin" element={<CardAdmin />} />
+
 
         {/* Auth route (example, if you want a separate page) */}
         <Route path="/auth" element={<AuthForm onClose={() => {}} />} />
