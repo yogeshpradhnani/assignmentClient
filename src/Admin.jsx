@@ -45,7 +45,7 @@ export default function Admin() {
         <h2 className="text-xl font-bold mb-4">Menu</h2>
         <ul className="space-y-2">
           <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/bookings")}>Bookings</button></li>
-          <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/cardAdmin")}>Units</button></li>
+          <li><button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/admin")}>Units</button></li>
 
         </ul>
       </div>
