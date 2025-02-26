@@ -124,10 +124,13 @@ export default function Bookings() {
             </button>
           </li>
           <li>
-            <button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/vendor")}>
-              Units
-            </button>
-          </li>
+  <button
+    className="w-full text-left hover:text-blue-600 transition"
+    onClick={() => navigate(role === "admin" ? "/admin" : "/vendor")}
+  >
+    Units
+  </button>
+</li>
           <li>
             <button className="w-full text-left hover:text-blue-600 transition" onClick={() => navigate("/reviews")}>
               Reviews
