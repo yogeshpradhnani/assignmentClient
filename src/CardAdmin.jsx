@@ -86,7 +86,7 @@ export default function CardAdmin({ hotel, setHotels }) {
       <div className="CardVendor bg-base-100 w-72 shadow-xl">
         <figure className="px-2 pt-10">
           <img
-            src={hotel.images?.length ? `${config.api}/${hotel.images[0]}` : `${config.api}/hotel.png`}
+            src={hotel.images?.length ? `${config.img}/${hotel.images[0]}` : `${config.img}/hotel.png`}
             alt={hotel.name}
             className="rounded-xl w-full h-40 object-cover"
           />
