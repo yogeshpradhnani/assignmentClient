@@ -22,7 +22,7 @@ export default function HotelDetailPopup({ onClose, listingId }) {
       }
 
       try {
-        const response = await fetch(`http://localhost:3031/api/v1/unit/${listingId}`, {
+        const response = await fetch(`${config.api}/api/v1/unit/${listingId}`, {
           method: "GET",
           headers: { Authorization: `Bearer ${token}` },
         });
