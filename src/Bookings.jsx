@@ -16,7 +16,7 @@ export default function Bookings() {
 
   // Restrict access to only vendors
   useEffect(() => {
-    if(role !== "vendor" && role !== "admin") {
+    if(role !== "vendor" && role !== "customer") {
       alert("Access denied! Only vendors can view this page.");
     }
   }, [role, navigate]);
